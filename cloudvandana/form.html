@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="css/from.css">
+
+</head>
+
+<body style="background-color:deepskyblue">
+    
+       
+    
+
+<div class="container" style="background-color:aliceblue">
+    <h1 class="header"> survey form</h1>
+    <form id="survey-form">
+        <div class="group">
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" required>
+        </div>
+        <div class="group">
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" required>
+        </div>
+        <div class="group">
+            <label for="date-of-birth">Date of Birth:</label>
+            <input type="date" id="date-of-birth" required>
+        </div>
+        <div class="group">
+            <label for="country">Country:</label>
+            <select id="country" required>
+                <option value="usa">United States</option>
+                <option value="canada">Canada</option>
+                <!-- Add more countries as needed -->
+            </select>
+        </div>
+        <div class="group">
+            <label>Gender:</label>
+            <input type="checkbox" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="checkbox" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+        </div>
+        <div class="group">
+            <label for="profession">Profession:</label>
+            <input type="text" id="profession" required>
+        </div>
+        <div class="group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+        </div>
+        <div class="group">
+            <label for="mobile">Mobile Number:</label>
+            <input type="tel" id="mobile" required>
+        </div>
+        <div class="group">
+            <button type="submit" id="submit-button">Submit</button>
+            <button type="reset" id="reset-button">Reset</button>
+        </div>
+    </form>
+</div>
+<div class="popup" id="popup">
+    <h2>Survey Results</h2>
+    <p>First Name: <span id="popup-first-name"></span></p>
+    <p>Last Name: <span id="popup-last-name"></span></p>
+    <p>Date of Birth: <span id="popup-date-of-birth"></span></p>
+    <p>Country: <span id="popup-country"></span></p>
+    <p>Gender: <span id="popup-gender"></span></p>
+    <p>Profession: <span id="popup-profession"></span></p>
+    <p>Email: <span id="popup-email"></span></p>
+    <p>Mobile Number: <span id="popup-mobile"></span></p>
+    <button type="button" id="close-popup">Close</button>
+</div>
+
+<div class="overlay" id="overlay"></div>
+
+
+<script src="js/form.js"></script>
+
+
+</body>
+</html>
